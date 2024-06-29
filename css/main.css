@@ -16,7 +16,7 @@ ul {
 }
 
 body {
-    background: var(--very-dark-blue-main-bg, #0D192C);
+    background: #0D192C;
 }
 
 header {
