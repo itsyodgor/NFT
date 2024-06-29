@@ -19,24 +19,40 @@ body {
     background: var(--very-dark-blue-main-bg, #0D192C);
 }
 
+header {
+    display: block;
+}
+
+/* .site-header-hero {
+    display: flex;
+    width: 100px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D192C;
+} */
 .site-header {
     width: 100%;
     padding-top: 152px;
     padding-bottom: 152px;
 }
 
-.container {
-    border-radius: 15px;
-    background: var(--very-dark-blue-card-bg, #15263F);
-    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.10);
-    max-width: 332px;
-    width: 100%;
+.d-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 596px;
     margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* max-width: 332px; */
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    border-radius: 15px;
+    background: #15263F;
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.10);
 }
 
-.site-header-photo {
+.logo-image {
     width: 302px;
     height: 302px;
     border-radius: 8px;
@@ -47,68 +63,105 @@ body {
 }
 
 .nft-name {
+    /* display: flex; */
+    align-items: center;
     color: #fff;
-    font-family: Outfit;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Outfit";
     font-size: 22px;
     font-weight: 600;
-    row-gap: 16px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    /* row-gap: 16px; */
 }
 
 .about {
+    /* display: flex; */
+    padding-top: 16px;
     color: #8BACD9;
-    font-family: Outfit;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Outfit";
     font-size: 18px;
     font-weight: 300;
-    line-height: 24px;
-    /* 144.444%*/
+    line-height: 24px;/* 144.444%*/
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.site-footer-line {
+    width: 302px;
+    height: 1px;
+    background-color: #2E405A;
+    margin-bottom: 22px;
 }
 
 .price-time {
     display: flex;
     justify-content: space-between;
-}
-
-.about-price {
-    align-items: center;
-
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .price-img {
+    display: inline;
+    justify-content: flex-end;
     width: 11px;
     height: 18px;
     column-gap: 1px;
 }
 
 .price-number {
+    display: inline;
     color: #00FFF8;
-    font-family: Outfit;
+    font-family: "Outfit";
+    font-feature-settings: 'clig' off, 'liga' off;
     font-size: 16px;
     font-weight: 600;
+    padding-right: 115px;
 }
 
-.about-time {}
-
 .time-img {
+    display: inline;
+    color: #8BACD9;
     width: 16px;
     height: 16px;
 }
 
 .time-left {
+    display: inline;
     color: #8BACD9;
-    font-family: Outfit;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Outfit";
     font-size: 16px;
     font-weight: 400;
 }
 
-.creator {}
+.creator {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
 
 .creator-img {
+    display: flex;
     width: 33px;
     height: 33px;
     border-radius: 33px;
 }
 
 .creator-name {
-    display: flex;
-    align-items: center;
+    color: #8BACD9;
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.creator-name::after{
+    gap: 5px;
+    content: "Jules Wyvern";
+    color: #fff;
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 400;
 }
