@@ -1,0 +1,114 @@
+@import url(./font.css);
+/* GLOBAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: var(--very-dark-blue-main-bg, #0D192C);
+}
+
+.site-header {
+    width: 100%;
+    padding-top: 152px;
+    padding-bottom: 152px;
+}
+
+.container {
+    border-radius: 15px;
+    background: var(--very-dark-blue-card-bg, #15263F);
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.10);
+    max-width: 332px;
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.site-header-photo {
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+    padding-top: 24px;
+    row-gap: 24px;
+    /* padding-left: 24px;
+        padding-right: 24px; */
+}
+
+.nft-name {
+    color: #fff;
+    font-family: Outfit;
+    font-size: 22px;
+    font-weight: 600;
+    row-gap: 16px;
+}
+
+.about {
+    color: #8BACD9;
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    /* 144.444%*/
+}
+
+.price-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-price {
+    align-items: center;
+
+}
+
+.price-img {
+    width: 11px;
+    height: 18px;
+    column-gap: 1px;
+}
+
+.price-number {
+    color: #00FFF8;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.about-time {}
+
+.time-img {
+    width: 16px;
+    height: 16px;
+}
+
+.time-left {
+    color: #8BACD9;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.creator {}
+
+.creator-img {
+    width: 33px;
+    height: 33px;
+    border-radius: 33px;
+}
+
+.creator-name {
+    display: flex;
+    align-items: center;
+}
