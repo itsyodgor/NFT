@@ -33,8 +33,11 @@ header {
 } */
 .site-header {
     width: 100%;
-    padding-top: 152px;
-    padding-bottom: 152px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* padding-top: 152px;
+    padding-bottom: 152px; */
 }
 
 .d-flex {
